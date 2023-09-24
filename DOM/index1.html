@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>document</title>
+    <style>
+        .highlight{
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+   <h1>DOM selector</h1>
+   <p id="myParagraph">this is paragraph with dummy text</p>
+   <span id="hi">Hello</span>
+   <ul>
+    <li class="listitem">Item 1</li>
+    <li class="listitem">Item 2</li>
+    <li class="listitem">Item 3</li>
+    <li class="listitem">Item 4</li>
+   </ul>
+   <script>
+    //select element using different DOM selectors
+
+    //console.log(document.getElementById('myParagraph'))
+
+    const paragraph = document.getElementById('myParagraph');
+    const listitems = document.getElementsByClassName("listitem")
+
+    const spanitem = document.querySelector('#hi')
+
+    const firstlistitem = document.querySelector('.listitem')
+    const alllistItems = document.querySelectorAll('.listitem')
+
+    const targerAllLiItem = document.getElementsByTagName('li')
+    console.log(targerAllLiItem)
+
+    // paragraph.addEventListener('click',() =>{
+    //     paragraph.classList.toggle('highlight')
+    // })
+    // // console.log(listitems)
+    // console.log(alllistItems)
+
+    // spanitem.style.color= 'green'
+    // console.log(firstlistitem)
+
+    // firstlistitem.textContent = 'updated item'
+   </script>
+</body>
+</html>
